@@ -70,7 +70,7 @@ Die Variable "$timestamp" ist auf den Zeitstempel der Anfrage an Google gesetzt.
 
 #### Das fertige Programm mit E-Mail-Benachrichtigung
 
-```php+HTML
+```php
 <!DOCTYPE html>
 <html>
 <head>
