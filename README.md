@@ -1,3 +1,3 @@
 ## Homepage Aha-Ha
 
-- [Recaptcha](recaptcha.md)
+- [Recaptcha](Recaptcha.md)
