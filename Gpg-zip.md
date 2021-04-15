@@ -26,8 +26,36 @@ cmd oder PowerShell öffnen. (Windows-Logo-Taste->Suche->PowerShell / cmd)
 
 ## 3. Dateien verschlüsseln
 
+Alle Dateien in einen Ordner packen.
+
 Das Programm befindet sich aktuell in: C:Users\Benutzername. Zum Verzeichnes navigieren mit:
 
 ```shell
 cd Verzeichnis
 ```
+
+Achtung: Nicht in den Ordner mit Dateien navigieren
+
+Im Verzeichnis folgenden Code ausführen:
+
+```shell
+
+zip dateien.zip ordner/*
+gpg -c -a dateien.zip
+```
+
+### Was ist Passiert?
+
+Es wurde ein [Zip-Ordner](https://de.wikipedia.org/wiki/ZIP-Dateiformat) mit den Dateien erstellt, welcher verschlüsselt wird (mit dem Namen dateien.zip.asc).
+
+## 4. Dateien entschlüsseln
+
+Im Verzeichnis folgenden Code ausführen:
+
+```shell
+gpg dateien.zip.asc
+unzip -l dateien.zip
+```
+# Links
+
+ - [Die Shell-Dateien](https://github.com/aha-ha/verschluesseln-mit-gpg)
