@@ -2,4 +2,4 @@
 
 - [Recaptcha](Recaptcha.md)
 - [CSS](/css)
-- [GnuPG verschlüsseln](gpg-zip.md)
+- [GnuPG verschlüsseln](Gpg-zip.md)
