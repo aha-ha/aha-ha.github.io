@@ -13,10 +13,7 @@ $urlreplace[]="[URL]\\1\\3[/URL]";
 $text = preg_replace($urlsuch, $urlreplace, $text);
  
  
-// Geben wir den Text jetzt aus, 
-// so erhalten wir als Ausgabe: [URL]http://www.php-einfach.de[/URL].
- 
-// Jetzt kommt der nächste Schritt, die URL's werden zu Links:
+
  
 $text = preg_replace("/\[URL\]www.(.*?)\[\/URL\]/si", "<a target=\"_blank\" href=\"http://www.\\1\">www.\\1</a>", $text);
  
@@ -30,8 +27,7 @@ $emailreplace[]="[EMAIL]\\0[/EMAIL]";
 if (strpos($text, "@")){
     $text = preg_replace($emailsuch, $emailreplace, $text);
 }
- 
-//E-Mail Adressen werden zu links
+
 $text = preg_replace("/\[EMAIL\](.*?)\[\/EMAIL\]/si", "<a href=\"mailto:\\1\">\\1</a>", $text);
  
 $text = preg_replace("/\[EMAIL=(.*?)\](.*?)\[\/EMAIL\]/si", "<a href=\"mailto:\\1\">\\2</a>", $text); 
