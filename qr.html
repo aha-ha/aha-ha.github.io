@@ -44,13 +44,15 @@
       <a download id="dwnldlink">Download</a>
       <hr>
       <h4>Qr-Code Scannen!</h4>
-      method="POST">
-
-<input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
-
-Zu lesende / scannende QR Code-Grafik auswählen: <input name="file" type="file" />
-<input type="submit" value="QR Code lesen" />
-</form>
+      <form enctype="multipart/form-data" action="http://api.qrserver.com/v1/read-qr-code/" method="POST">
+        <!-- MAX_FILE_SIZE (maximale Dateigröße in Bytes) muss vor dem input-Feld
+            angegeben werden, über welches die QR Code Grafik hochgeladen wird -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+        <!-- Der "name" des Input-Felds muss "file" lauten, da es sich dabei um den
+           Namen des POST-Parameters handelt -->
+        Zu lesende / scannende QR Code-Grafik auswählen: <input name="file" type="file" />
+        <input type="submit" value="QR Code lesen" />
+        </form>
 </body>
 
 </html>
