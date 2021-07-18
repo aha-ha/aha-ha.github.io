@@ -1,4 +1,4 @@
-start(1000,50)
+
 function main() {
 	var scene = new THREE.Scene();
 	var box = generateBox(15,15,15);
@@ -18,7 +18,7 @@ function main() {
 	document.getElementById('webgl').appendChild(renderer.domElement);
 	update(renderer, scene, camera);
 	return scene;
-	
+	start(1000,50)
 
 
 }
