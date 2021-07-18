@@ -31,6 +31,7 @@ function delay(n){
 async function start(t, t2) {
 
 	for (var i = 0; i < t; i++) {
+		console.info(i)
 			    			scene.getObjectByName('box-1').rotation.y -= 0.01;
 			scene.getObjectByName('box-1').rotation.x += 0.01;
 			await delay(t2)
