@@ -93,4 +93,4 @@ function update(renderer, scene, camera) {
 
 
  console.log(scene);
- 	start(1000,50)
+ 	start(300,50)
