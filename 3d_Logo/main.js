@@ -29,7 +29,7 @@ function start(t, t2) {
 
 	}
 }
-function start123 {
+function start123() {
 
 	    			scene.getObjectByName('box-1').rotation.y -= 0.01;
 			scene.getObjectByName('box-1').rotation.x += 0.01;
