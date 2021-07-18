@@ -22,15 +22,17 @@ function main() {
 
 }
 
-function start(n) {
+function start(t, t2) {
 
 	for (var i = 0; i < n; i++) {
-		setTimeout(function(){
-    			scene.getObjectByName('box-1').rotation.y -= 0.01;
-			scene.getObjectByName('box-1').rotation.x += 0.01;
-},200);
+		setTimeout(start123(t),t2);
 
 	}
+}
+function start123(t) {
+
+	    			scene.getObjectByName('box-1').rotation.y -= 0.01;
+			scene.getObjectByName('box-1').rotation.x += 0.01;
 }
 	var scene = main();
 	 document.addEventListener("keydown", PressT);
