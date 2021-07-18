@@ -27,7 +27,7 @@ function delay(n){
     });
 }
 
-function start(t, t2) {
+async function start(t, t2) {
 
 	for (var i = 0; i < t; i++) {
 			    			scene.getObjectByName('box-1').rotation.y -= 0.01;
