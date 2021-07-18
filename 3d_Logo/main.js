@@ -21,6 +21,14 @@ function main() {
 
 
 }
+
+function start(n) {
+
+	for (var i = 0; i < n; i++) {
+			scene.getObjectByName('box-1').rotation.y -= 0.01;
+			scene.getObjectByName('box-1').rotation.x += 0.01;
+	}
+}
 	var scene = main();
 	 document.addEventListener("keydown", PressT);
 	function PressT (evt) {
