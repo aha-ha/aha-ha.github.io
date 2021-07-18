@@ -11,9 +11,9 @@ camera.rotation.x = 45 * (Math.PI / 180);
 var scene = new THREE.Scene();
 scene.add(camera); //ADDED
 var img = new THREE.MeshBasicMaterial({ //CHANGED to MeshBasicMaterial
-map:THREE.TextureLoader('img/AracoLogo.png')
+scene:THREE.TextureLoader('img/AracoLogo.png')
 });
-img.map.needsUpdate = true; //ADDED
+img.scene.needsUpdate = true; //ADDED
 //plane
 var plane = new THREE.Mesh(new THREE.PlaneGeometry(200, 200),img);
 plane.overdraw = true;
