@@ -11,7 +11,7 @@ camera.rotation.x = 45 * (Math.PI / 180);
 var scene = new THREE.Scene();
 scene.add(camera); //ADDED
 var img = new THREE.MeshBasicMaterial({ //CHANGED to MeshBasicMaterial
-map:THREE.ImageUtils.loadTexture('img/Araco_Logo.png')
+map:THREE.ImageUtils.loadTexture('img/AracoLogo.png')
 });
 img.map.needsUpdate = true; //ADDED
 //plane
