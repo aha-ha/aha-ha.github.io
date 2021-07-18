@@ -21,18 +21,23 @@ function main() {
 
 
 }
+function delay(n){
+    return new Promise(function(resolve){
+        setTimeout(resolve,n);
+    });
+}
 
 function start(t, t2) {
 
 	for (var i = 0; i < t; i++) {
-		setTimeout(start123,t2);
+			    			scene.getObjectByName('box-1').rotation.y -= 0.01;
+			scene.getObjectByName('box-1').rotation.x += 0.01;
+			await delay(t2)
 
 	}
-}
-function start123() {
 
-	    			scene.getObjectByName('box-1').rotation.y -= 0.01;
-			scene.getObjectByName('box-1').rotation.x += 0.01;
+
+
 }
 	var scene = main();
 	 document.addEventListener("keydown", PressT);
