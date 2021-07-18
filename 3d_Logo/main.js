@@ -24,12 +24,12 @@ function main() {
 
 function start(t, t2) {
 
-	for (var i = 0; i < n; i++) {
-		setTimeout(start123(t),t2);
+	for (var i = 0; i < t; i++) {
+		setTimeout(start123,t2);
 
 	}
 }
-function start123(t) {
+function start123 {
 
 	    			scene.getObjectByName('box-1').rotation.y -= 0.01;
 			scene.getObjectByName('box-1').rotation.x += 0.01;
