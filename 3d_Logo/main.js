@@ -32,6 +32,7 @@ camera: camera,
 scene: scene,
 plane: plane
 };
+}
 
 
 
