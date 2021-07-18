@@ -1,3 +1,4 @@
+start(1000,50)
 function main() {
 	var scene = new THREE.Scene();
 	var box = generateBox(15,15,15);
