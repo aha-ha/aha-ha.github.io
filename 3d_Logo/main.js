@@ -18,7 +18,7 @@ function main() {
 	document.getElementById('webgl').appendChild(renderer.domElement);
 	update(renderer, scene, camera);
 	return scene;
-	start(1000,50)
+
 
 
 }
@@ -92,3 +92,4 @@ function update(renderer, scene, camera) {
 
 
  console.log(scene);
+ 	start(1000,50)
