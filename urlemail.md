@@ -34,6 +34,7 @@ $text = preg_replace("/\[EMAIL=(.*?)\](.*?)\[\/EMAIL\]/si", "<a href=\"mailto:\\
  
  
 echo $text;
+?>
 ```
  ### Beispiel:
  Der String _"https://github.com email@beispiel.de"_ ergibt folgende Ausgabe:
