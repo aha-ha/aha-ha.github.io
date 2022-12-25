@@ -5,7 +5,7 @@ class ScratchCam {
         blocks: [
             {
                 opcode: 'takephoto',
-                blockType: ScratchCam.BlockType.REPORTER,
+                blockType: Scratch.BlockType.REPORTER,
                 text: 'Take a Photo and get File'
             }
         ]
