@@ -1,0 +1,16 @@
+<p>Das Projekt "Alien Invaders" hat im Moment <span id="views">?</span> Views, <span id="loves">?</span> Loves, <span id="fav">?</span> Favorites und <span id="remixes">?</span> Remixe.</p>
+    <script>
+
+        fetch("https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/users/Janos2K/projects/692520913")
+            .then(res => {
+            return res.json();
+        })
+        .then(data => {
+            console.log(data.count);
+            document.getElementById("views").innerText = data.stats.views;
+            document.getElementById("loves").innerText = data.stats.loves;
+            document.getElementById("fav").innerText = data.stats.favorites;
+            document.getElementById("remixes").innerText = data.stats.remixes;
+        })
+        .catch(error => console.log(error));
+    </script>
