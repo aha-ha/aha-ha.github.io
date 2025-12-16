@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <p><span id="code-value">kein code</span></p>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code');
+      const out = document.getElementById('code-value');
+
+      // Zeigt den Wert sicher an (kein HTML-Inject, da textContent)
+      out.textContent = code ?? 'kein code';
+    })();
+  </script>
+</body>
+</html>
